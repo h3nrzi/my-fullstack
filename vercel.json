@@ -1,7 +1,7 @@
 {
-  "buildCommand": "npx nx build frontend --prod",
+  "buildCommand": "npm run build:frontend",
   "outputDirectory": "frontend/dist",
-  "installCommand": "npm install",
+  "installCommand": "npm ci --legacy-peer-deps",
   "framework": null,
   "rewrites": [
     {
