@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: my-fullstack-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install && npx nx build backend --prod
+    startCommand: node backend/dist/main.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 30d
+      - key: FRONTEND_URL
+        sync: false

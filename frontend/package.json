@@ -1,0 +1,16 @@
+{
+  "name": "@my-fullstack/frontend",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@paypal/react-paypal-js": "^8.9.2",
+    "@reduxjs/toolkit": "^2.11.0",
+    "moment": "^2.30.1",
+    "react-bootstrap": "^2.10.10",
+    "react-helmet-async": "^2.0.5",
+    "react-hook-form": "^7.67.0",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "react-toastify": "^11.0.5"
+  }
+}
