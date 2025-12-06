@@ -8,5 +8,5 @@ export const CurrentUser = createParamDecorator(
       .switchToHttp()
       .getRequest<Request & { user?: AuthUser }>();
     return request.user;
-  },
+  }
 );
